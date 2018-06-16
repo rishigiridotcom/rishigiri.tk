@@ -247,6 +247,22 @@ footer {
   }
 }
 
+.faceswap {
+  box-shadow: grey 0px 0px 8px;
+}
+
+.faceswap:hover {
+  box-shadow: grey 0px 0px 5px;
+}
+
+.imageDate {
+  text-align: right;
+}
+
+#loading {
+    -webkit-animation: rotation 10s infinite linear;
+}
+
 @media print, screen and (max-width: 480px) {
   body {
     padding:15px;
@@ -267,4 +283,13 @@ footer {
     font-size:12pt;
     color:#444;
   }
+}
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(359deg);
+    }
+    to {
+        -webkit-transform: rotate(0deg);
+    }
 }
